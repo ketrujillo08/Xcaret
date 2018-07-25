@@ -1,1 +1,805 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "~font-awesome/css/font-awesome.css";
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #ffffff;
+    margin: 0;
+}
+
+h2,
+p {
+    margin: 0px !important;
+}
+
+ul {
+    margin: 0;
+    position: relative;
+    display: block;
+}
+
+#wrapper {
+    position: relative;
+    display: block;
+    width: 1170px;
+    margin: 0 auto;
+}
+
+nav {
+    position: flex;
+    display: block;
+    top: 0;
+    min-height: 51px;
+    background: #000000;
+}
+
+.container-wrapper,
+.container-nav {
+    position: relative;
+    display: block;
+    width: 900px;
+    margin: 0 auto;
+}
+
+nav ul {
+    text-align: right;
+}
+
+nav ul li {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 18px 0px;
+    border-right: 1px solid #ffffff;
+    padding: 0px 15px;
+}
+
+nav ul li a {
+    letter-spacing: 2px;
+}
+
+.header-container {
+    position: relative;
+    display: block;
+    color: #3f3f3fec;
+    overflow: auto;
+}
+
+.header-container .col-2,
+.header-container .col-3 {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    overflow: auto;
+    float: left;
+    margin: 25px 0px;
+}
+
+.col-2 {
+    width: 40%;
+}
+
+.col-3 {
+    width: 60%;
+}
+
+.header-container ul {
+    margin: 20px 0px;
+    position: relative;
+    display: block;
+    text-align: right;
+}
+
+.header-container ul li {
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    border-right: 1px solid #3f3f3fec;
+    padding: 0px 15px;
+}
+
+.header-container h2 {
+    font-size: 42px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.header-container p {
+    font-weight: bold;
+}
+
+.header-steps {
+    position: relative;
+    display: block;
+    color: #3f3f3fec;
+    overflow: hidden;
+}
+
+.steps {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.steps li {
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 20%;
+    float: left;
+    padding: 15px 10px;
+    border: 1px solid #000000;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    height: auto;
+}
+
+.steps li.active {
+    background: #000000;
+    color: #ffffff;
+}
+
+.steps li.active {
+    background: #000000;
+    color: #ffffff;
+}
+
+.steps li.active::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 22px solid transparent;
+    border-bottom: 22px solid transparent;
+    border-left: 22px solid #000000;
+    top: 0;
+    right: -15px;
+}
+
+.breadcrumbs {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    color: #3f3f3fec;
+    margin: 25px 0px;
+}
+
+.breadcrumbs ul {
+    position: relative;
+    display: block;
+    padding: 0;
+}
+
+.breadcrumbs ul li {
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    font-size: 25px;
+}
+
+.breadcrumbs ul li:after {
+    content: '/';
+    margin: 0 15px;
+}
+
+.breadcrumbs ul li.active {
+    color: #000000;
+    font-weight: bold;
+}
+
+.breadcrumbs ul li.active:after {
+    content: '';
+}
+
+.content {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    color: #3f3f3fec;
+}
+
+.content .columna-1,
+.content .columna-2 {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    float: left;
+}
+
+.content .columna-1 {
+    width: 65%;
+    padding-right: 10px;
+}
+
+.content .columna-2 {
+    width: 35%;
+    padding-left: 10px;
+}
+
+.galeria {
+    position: relative;
+    display: block;
+    height: 400px;
+    background: #4d4b4b;
+}
+
+.galeria .btn-play {
+    font-size: 20px;
+    color: #ffffff;
+    padding: 12px 15px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    transform: translate( -50%, -50%);
+}
+
+.galeria .opciones {
+    position: absolute;
+    display: block;
+    background: #000000;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+}
+
+.galeria .opciones a {
+    position: relative;
+    display: inline-block;
+    padding: 15px 25px;
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    border: 1px solid #ffffff;
+}
+
+.content h1 {
+    margin: 25px 0;
+}
+
+.content p {
+    position: relative;
+    display: block;
+    margin-top: 25px !important;
+    line-height: 16pt;
+    font-size: 14px;
+}
+
+.atractivos {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 30px 0;
+}
+
+.atractivos div {
+    position: relative;
+    display: inline-block;
+    float: left;
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.atractivos img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.atractivos div p {
+    padding: 5px 0 5px 15px;
+    margin: 0 !important;
+}
+
+.content-btn {
+    position: relative;
+    display: block;
+    text-align: right;
+    margin: 35px 0;
+}
+
+.btn-cotizar {
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background: #000000;
+    border: none;
+    border-radius: 5px;
+}
+
+.medios-pago {
+    position: relative;
+    display: block;
+    color: #000000;
+    overflow: auto;
+    border: 1px solid #000000;
+    padding: 10px 35px;
+    box-sizing: border-box;
+}
+
+.medios-pago div {
+    position: relative;
+    display: inline-block;
+    float: left;
+    overflow: auto;
+}
+
+.col-1 {
+    width: 20%;
+}
+
+.medios-pago strong {
+    position: relative;
+    font-size: 22px;
+}
+
+.medios-pago strong span {
+    letter-spacing: 4px;
+}
+
+.col-4 {
+    width: 80%;
+}
+
+.medios-pago img {
+    position: relative;
+    display: block;
+    margin-top: -15px;
+    width: 100%;
+}
+
+.clausulas {
+    position: relative;
+    display: block;
+    margin-top: 10px;
+}
+
+footer {
+    background: #1A1A1A;
+    position: relative;
+    display: block;
+    overflow: auto;
+    margin-top: 30px;
+    color: #ffffff;
+}
+
+footer .acerca,
+footer .contacto {
+    position: relative;
+    display: block;
+    overflow: auto;
+    padding: 10px 40px;
+    box-sizing: border-box;
+}
+
+footer .contacto {
+    background: #000000;
+}
+
+.logo-exp {
+    position: relative;
+    display: block;
+}
+
+.logo-exp img {
+    display: block;
+    position: relative;
+    width: 350px;
+    margin: 0 auto;
+}
+
+footer .marcas {
+    position: relative;
+    display: block;
+    overflow: auto;
+}
+
+.marcas .row {
+    display: block;
+    position: relative;
+    overflow: auto;
+    margin: 10px 0;
+}
+
+footer .marcas .columnas-3 {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 33.33%
+}
+
+footer .marcas .columnas-3 img {
+    position: relative;
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+
+footer .marcas .columnas-3 h4 {
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+footer .marcas .columnas-3 ul {
+    position: relative;
+    display: block;
+    font-size: 14px;
+    padding: 0;
+}
+
+footer .marcas .columnas-3 ul li {
+    list-style: none;
+    margin: 5px 0;
+}
+
+.ultimo-p {
+    display: block;
+    position: relative;
+}
+
+.ultimo-p p {
+    display: block;
+    position: relative;
+    margin: 0;
+}
+
+.head-sidebar {
+    position: relative;
+    display: block;
+    background: #000000;
+    color: #ffffff;
+    box-sizing: border-box;
+    overflow: auto;
+    padding: 5px;
+    text-align: center;
+}
+
+.head-sidebar h3,
+.head-sidebar span {
+    margin: 0;
+    font-weight: 100;
+}
+
+.head-sidebar h3 {
+    font-size: 20px;
+}
+
+.head-sidebar span {
+    font-size: 14px;
+}
+
+.nombre-producto {
+    display: block;
+    margin-top: .5rem;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.compra {
+    font-size: 14px;
+}
+
+.compra div {
+    position: relative;
+    display: block;
+    margin-bottom: 2.5rem;
+}
+
+.flota-d {
+    float: right;
+}
+
+.precio-linea {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn-comprar {
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    border: none;
+    border-radius: 5px;
+    background: #000000;
+    padding: 10px 35px;
+    font-size: 16px;
+    color: #ffffff;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.compra .terminos {
+    font-style: italic;
+    line-height: 13px;
+}
+
+.img-why {
+    position: relative;
+    display: block;
+}
+
+.title-why {
+    margin: 0 0 10px 0;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+
+.num-cart {
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    padding: 0 5px;
+    font-size: 10px;
+}
+
+@media(max-width: 1170px) {
+    #wrapper {
+        width: 100%;
+    }
+    .container-wrapper,
+    .container-nav {
+        width: 100%;
+    }
+    .container-wrapper {
+        padding: 0 25px;
+        box-sizing: border-box;
+    }
+    nav ul {
+        text-align: center;
+        padding: 0;
+    }
+    nav ul li {
+        position: relative;
+        display: inline-block;
+        list-style: none;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin: 18px 0px;
+        padding: 0px 5px;
+        font-size: 8px;
+    }
+    .header-container .col-2,
+    .header-container .col-3 {
+        display: block;
+        overflow: auto;
+        float: none;
+        margin: 25px 0px;
+        width: 100%;
+        text-align: center;
+    }
+    .header-container ul {
+        padding: 0;
+    }
+    .header-container ul li {
+        width: 50%;
+        float: left;
+        position: relative;
+        display: inline-block;
+        box-sizing: border-box;
+        border: 1px solid #3f3f3fec;
+        padding: 25px 15px;
+        text-align: center;
+        font-size: 8px;
+    }
+    .steps li {
+        width: 100%;
+    }
+    .content .columna-1,
+    .content .columna-2 {
+        width: 100%;
+        padding: 0;
+    }
+    .galeria .opciones a {
+        font-size: 13px;
+    }
+    .medios-pago div.col-1,
+    .medios-pago div.col-4 {
+        width: 100%
+    }
+    .medios-pago strong {
+        letter-spacing: 10px;
+    }
+    .medios-pago img {
+        margin-top: 5px;
+    }
+    footer .marcas .columnas-3 ul {
+        font-size: 10px;
+    }
+    .logo-exp img {
+        width: 270px;
+    }
+    .img-why {
+        position: relative;
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 900px) {
+    #wrapper {
+        width: 100%;
+    }
+    .container-wrapper,
+    .container-nav {
+        width: 100%;
+    }
+    .container-wrapper {
+        padding: 0 25px;
+        box-sizing: border-box;
+    }
+    nav ul {
+        text-align: center;
+        padding: 0;
+    }
+    nav ul li {
+        position: relative;
+        display: inline-block;
+        list-style: none;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin: 18px 0px;
+        padding: 0px 5px;
+        font-size: 8px;
+    }
+    .header-container .col-2,
+    .header-container .col-3 {
+        display: block;
+        overflow: auto;
+        float: none;
+        margin: 25px 0px;
+        width: 100%;
+        text-align: center;
+    }
+    .header-container ul {
+        padding: 0;
+    }
+    .header-container ul li {
+        width: 50%;
+        float: left;
+        position: relative;
+        display: inline-block;
+        box-sizing: border-box;
+        border: 1px solid #3f3f3fec;
+        padding: 25px 15px;
+        text-align: center;
+        font-size: 8px;
+    }
+    .steps li {
+        width: 100%;
+    }
+    .content .columna-1,
+    .content .columna-2 {
+        width: 100%;
+        padding: 0;
+    }
+    .galeria .opciones a {
+        font-size: 13px;
+    }
+    .medios-pago div.col-1,
+    .medios-pago div.col-4 {
+        width: 100%
+    }
+    .medios-pago strong {
+        letter-spacing: 10px;
+    }
+    .medios-pago img {
+        margin-top: 5px;
+    }
+    footer .marcas .columnas-3 ul {
+        font-size: 10px;
+    }
+    .logo-exp img {
+        width: 270px;
+    }
+    .img-why {
+        position: relative;
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 500px) {
+    #wrapper {
+        width: 100%;
+    }
+    .container-wrapper,
+    .container-nav {
+        width: 100%;
+    }
+    .container-wrapper {
+        padding: 0 25px;
+        box-sizing: border-box;
+    }
+    nav ul {
+        text-align: center;
+        padding: 0;
+    }
+    nav ul li {
+        position: relative;
+        display: inline-block;
+        list-style: none;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin: 18px 0px;
+        padding: 0px 5px;
+        font-size: 8px;
+    }
+    .header-container .col-2,
+    .header-container .col-3 {
+        display: block;
+        overflow: auto;
+        float: none;
+        margin: 25px 0px;
+        width: 100%;
+        text-align: center;
+    }
+    .header-container ul {
+        padding: 0;
+    }
+    .header-container ul li {
+        width: 50%;
+        float: left;
+        position: relative;
+        display: inline-block;
+        box-sizing: border-box;
+        border: 1px solid #3f3f3fec;
+        padding: 25px 15px;
+        text-align: center;
+        font-size: 8px;
+    }
+    .steps li {
+        width: 100%;
+    }
+    .content .columna-1,
+    .content .columna-2 {
+        width: 100%;
+        padding: 0;
+    }
+    .galeria .opciones a {
+        font-size: 13px;
+    }
+    .atractivos div {
+        width: 100%;
+    }
+    .atractivos div p {
+        padding: 15px 0;
+        font-size: 18px;
+        text-align: justify;
+    }
+    .medios-pago div.col-1,
+    .medios-pago div.col-4 {
+        width: 100%
+    }
+    .medios-pago strong {
+        letter-spacing: 10px;
+    }
+    .medios-pago img {
+        margin-top: 5px;
+    }
+    footer .marcas .columnas-3 ul {
+        font-size: 10px;
+    }
+    .logo-exp img {
+        width: 270px;
+    }
+}

@@ -1,0 +1,111 @@
+<div class="container-wrapper">
+    <section class="header-container">
+        <div class="col-2">
+            <h2>LOGOTIPO</h2>
+            <p>OPERADO POR EXPERENCIAS XCARET</p>
+        </div>
+        <div class="col-3">
+            <ul>
+                <li>Inicio</li>
+                <li>Mis Fotos</li>
+                <li>Preguntas Frecuentes</li>
+                <li>
+                    <span><i class="fa fa-facebook"></i></span>
+                    <span><i class="fa fa-twitter"></i></span>
+                    <span><i class="fa fa-instagram"></i></span>
+                    <span><i class="fa fa-youtube"></i></span>
+                    <span><i class="fa fa-pinterest"></i></span>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+    <section class="header-steps">
+        <ul class="steps">
+            <li class="active">Quiero</li>
+            <li>Saber mas del paquer</li>
+            <li>Comprar mi entrada</li>
+            <li>Ahorrar mas</li>
+            <li>Ver la galeria de</li>
+        </ul>
+
+    </section>
+    <section class="breadcrumbs">
+        <ul>
+            <li>Inicio</li>
+            <li class="active">Acerca de ..</li>
+        </ul>
+    </section>
+    <section class="content">
+        <div class="columna-1">
+            <div class="galeria">
+                <div class="vista-previa">
+                    <a class="btn-play"><i class="fa fa-play"></i></a>
+                </div>
+                <div class="opciones">
+                    <a><i class="fa fa-image"></i> Ver imágenes</a>
+                    <a><i class="fa fa-eye"></i> Vista 360°</a>
+                </div>
+            </div>
+            <h1 class="title">{{tour.tituloH1}}</h1>
+            <p>{{tour.descripcion}}</p>
+            <h1>Atractivos principales</h1>
+            <div class="atractivos" *ngFor="let atractivo of atractivos">
+                <div><img [src]="atractivo.img"></div>
+                <div>
+                    <p>{{atractivo.desc}}</p>
+                </div>
+            </div>
+
+            <div class="content-btn">
+                <a class="btn-cotizar">Cotizar mi entrada ahora</a>
+            </div>
+
+
+        </div>
+        <div class="columna-2">
+            <div class="head-sidebar">
+                <h3>COMPRA AQUÍ</h3>
+                <span>Y obten hasta un 15% de descuento</span>
+            </div>
+            <div class="compra">
+                <form>
+                    <div><span class="nombre-producto">Nombre del Prodcuto</span></div>
+                    <div><label>Precio regular</label><strong class="flota-d">$0,000.00MXN</strong></div>
+                    <div class="precio-linea"><label>Precio en linea</label><strong class="flota-d">$0,000.00MXN</strong></div>
+                    <div><input type="checkbox" id="transporte"><label>Agregar transportación redonda desde tu hotel</label><strong class="flota-d">$0,000.00MXN</strong></div>
+                    <div><input type="checkbox" id="transporte"><label>Agregar Foto Pase</label><strong class="flota-d">$0,000.00MXN</strong></div>
+                    <div><button class="btn-comprar">COMPRAR AHORA</button></div>
+                    <div>
+                        <p class="terminos">
+                            * Niños menores de 4 años entran gratis. De 5 a 11 años -50% del precio de adulto. -10% de descuento - reservando con 7-20 días de anticipación. -15% de descuento - reservando con 21 días o más de anticipación. Precios sujetos a cambios sin previo aviso.
+                            Aplican restricciones.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="title-why">¿Porqué reservar con nosotros?</h4>
+                        <img src="//www.xcaretexperiencias.com/img/svg/porque-comprar.svg" class="img-why">
+                    </div>
+                </form>
+
+
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+    <div class="medios-pago">
+        <div class="col-1">
+            <strong>Hasta 9 Meses <span>Sin Interes</span></strong>
+        </div>
+        <div class="col-4">
+            <img src="//www.xcaretexperiencias.com/img/msi.png">
+        </div>
+        <div class="clausulas">Con los principales bancos y tarjetas emitidas en México. No aplica con Paypal. Ver opciones</div>
+    </div>
+
+
+</div>
